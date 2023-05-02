@@ -13,3 +13,32 @@ header {
   justify-content: center;
   background-color: rgb(212, 206, 206);
 }
+
+main {
+  padding-top: 100px;
+}
+
+section {
+  padding-bottom: 25px;
+  display: flexbox;
+  text-align: center;
+  position: relative;
+}
+.bookmark {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li {
+  margin-right: 10px;
+  border: 2px solid;
+  padding: 3px;
+  border-radius: 8px;
+}
