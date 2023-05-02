@@ -1,0 +1,15 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  border: 2px solid black;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background-color: rgb(212, 206, 206);
+}
