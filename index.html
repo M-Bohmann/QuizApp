@@ -14,8 +14,8 @@
     </header>
     <main>
       <section>
-        <fieldset data-js="quiz-cards">
-          <button class="bookmark" data-js="save-bookmark">
+        <fieldset class="quiz-card" data-js="quiz-cards">
+          <button class="quiz-card__bookmark-button" data-js="save-bookmark">
             <svg viewBox="0 0 24 24" height="1em" width="1em">
               <title>bookmark</title>
               <path
@@ -24,9 +24,11 @@
             </svg>
           </button>
           <p>What is the capital of Germany?</p>
-          <button type="button" class="answer-button">Show Answer</button>
+          <button type="button" class="quiz-card__answer-button">
+            Show Answer
+          </button>
           <p hidden>Berlin</p>
-          <ul class="tags-list">
+          <ul class="quiz-card__tags-list">
             <li>tag 1</li>
             <li>tag 2</li>
             <li>tag 3</li>
@@ -35,7 +37,7 @@
       </section>
       <section>
         <fieldset data-js="quiz-cards">
-          <button class="bookmark" data-js="save-bookmark">
+          <button class="quiz-card__bookmark-button" data-js="save-bookmark">
             <svg viewBox="0 0 24 24" height="1em" width="1em">
               <title>bookmark</title>
               <path
@@ -44,9 +46,11 @@
             </svg>
           </button>
           <p>What property flips the axes in flexbox?</p>
-          <button type="button" class="answer-button">Show Answer</button>
+          <button type="button" class="quiz-card__answer-button">
+            Show Answer
+          </button>
           <p hidden>flex-direction</p>
-          <ul class="tags-list">
+          <ul class="quiz-card__tags-list">
             <li>tag 1</li>
             <li>tag 2</li>
             <li>tag 3</li>
@@ -55,7 +59,7 @@
       </section>
       <section>
         <fieldset data-js="quiz-cards">
-          <button class="bookmark" data-js="save-bookmark">
+          <button class="quiz-card__bookmark-button" data-js="save-bookmark">
             <svg viewBox="0 0 24 24" height="1em" width="1em">
               <title>bookmark</title>
               <path
@@ -64,9 +68,11 @@
             </svg>
           </button>
           <p>Is this a Question?</p>
-          <button type="button" class="answer-button">Show Answer</button>
+          <button type="button" class="quiz-card__answer-button">
+            Show Answer
+          </button>
           <p hidden>yes</p>
-          <ul class="tags-list">
+          <ul class="quiz-card__tags-list">
             <li>tag 1</li>
             <li>tag 2</li>
             <li>tag 3</li>
@@ -76,7 +82,7 @@
     </main>
     <footer>
       <nav>
-        <ul class="footer-list">
+        <ul class="footer__list">
           <li>
             <a href="index.html">
               <svg viewBox="0 0 24 24" height="1em" width="1em">

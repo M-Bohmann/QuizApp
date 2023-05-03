@@ -35,18 +35,18 @@ fieldset {
   border-radius: 5px;
   border: none;
 }
-.bookmark {
+.quiz-card__bookmark-button {
   position: absolute;
   top: -15px;
   right: 25px;
   background-color: transparent;
   border: none;
 }
-.tags-list {
+.quiz-card__tags-list {
   list-style-type: none;
   display: flex;
 }
-.tags-list li {
+.quiz-card__tags-list li {
   margin-right: 10px;
   border: 2px solid rgb(255, 255, 255);
   padding: 5px;
@@ -63,7 +63,7 @@ footer {
   background-color: rgb(212, 206, 206);
 }
 
-.footer-list {
+.footer__list {
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -71,7 +71,7 @@ footer {
   justify-content: space-around;
 }
 
-.bookmark svg {
+.quiz-card__bookmark-button svg {
   font-size: 40px;
 }
 
@@ -79,7 +79,7 @@ footer svg {
   font-size: 60px;
 }
 
-.answer-button {
+.quiz-card__answer-button {
   padding: 6px;
   margin: 20px;
   border-radius: 6px;
@@ -87,12 +87,12 @@ footer svg {
   background-color: white;
 }
 
-button.bookmark {
+button.quiz-card__bookmark-button {
   fill: black;
 }
 /* Profile */
 
-.profile-img {
+.profile__img {
   width: 60%;
   height: 60%;
 }
@@ -102,6 +102,6 @@ body.dark {
   color: #fff;
 }
 
-.toggle-button {
+.settings__toggle-button {
   padding: 10px 20px;
 }
