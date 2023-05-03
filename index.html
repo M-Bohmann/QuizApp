@@ -6,38 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
       <section>
-        <fieldset>
-          <button class="bookmark">
-            <i class="fa fa-bookmark-o" style="font-size: 36px"></i>
+        <fieldset class="quiz-card" data-js="quiz-cards">
+          <button class="quiz-card__bookmark-button" data-js="save-bookmark">
+            <svg viewBox="0 0 24 24" height="1em" width="1em">
+              <title>bookmark</title>
+              <path
+                d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
+              />
+            </svg>
           </button>
           <p>What is the capital of Germany?</p>
-          <button>Show Answer</button>
-          <ul class="tags">
-            <li>tag 1</li>
-            <li>tag 2</li>
-            <li>tag 3</li>
-          </ul>
-        </fieldset>
-      </section>
-      <section>
-        <fieldset>
-          <button class="bookmark">
-            <i class="fa fa-bookmark-o" style="font-size: 36px"></i>
+          <button type="button" class="quiz-card__answer-button">
+            Show Answer
           </button>
-          <p>What property flips the aes in flexbox?</p>
-          <button>Show Answer</button>
-          <ul class="tags">
+          <p hidden>Berlin</p>
+          <ul class="quiz-card__tags-list">
             <li>tag 1</li>
             <li>tag 2</li>
             <li>tag 3</li>
@@ -45,13 +36,43 @@
         </fieldset>
       </section>
       <section>
-        <fieldset>
-          <button class="bookmark">
-            <i class="fa fa-bookmark-o" style="font-size: 36px"></i>
+        <fieldset data-js="quiz-cards">
+          <button class="quiz-card__bookmark-button" data-js="save-bookmark">
+            <svg viewBox="0 0 24 24" height="1em" width="1em">
+              <title>bookmark</title>
+              <path
+                d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
+              />
+            </svg>
+          </button>
+          <p>What property flips the axes in flexbox?</p>
+          <button type="button" class="quiz-card__answer-button">
+            Show Answer
+          </button>
+          <p hidden>flex-direction</p>
+          <ul class="quiz-card__tags-list">
+            <li>tag 1</li>
+            <li>tag 2</li>
+            <li>tag 3</li>
+          </ul>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset data-js="quiz-cards">
+          <button class="quiz-card__bookmark-button" data-js="save-bookmark">
+            <svg viewBox="0 0 24 24" height="1em" width="1em">
+              <title>bookmark</title>
+              <path
+                d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
+              />
+            </svg>
           </button>
           <p>Is this a Question?</p>
-          <button>Show Answer</button>
-          <ul class="tags">
+          <button type="button" class="quiz-card__answer-button">
+            Show Answer
+          </button>
+          <p hidden>yes</p>
+          <ul class="quiz-card__tags-list">
             <li>tag 1</li>
             <li>tag 2</li>
             <li>tag 3</li>
@@ -61,15 +82,36 @@
     </main>
     <footer>
       <nav>
-        <ul class="footerList">
+        <ul class="footer__list">
           <li>
-            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="index.html">
+              <svg viewBox="0 0 24 24" height="1em" width="1em">
+                <title>home</title>
+                <path
+                  d="M16,8.41L11.5,3.91L4.41,11H6V12L6,19H9V13H14V19H17V11H18.59L17,9.41V6H16V8.41M2,12L11.5,2.5L15,6V5H18V9L21,12H18V20H13V14H10V20H5V12H2Z"
+                />
+              </svg>
+            </a>
           </li>
           <li>
-            <a href="bookmarks.html"><i class="fa fa-bookmark"></i></a>
+            <a href="bookmarks.html">
+              <svg viewBox="0 0 24 24" height="1em" width="1em">
+                <title>bookmark</title>
+                <path
+                  d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
+                />
+              </svg>
+            </a>
           </li>
           <li>
-            <a href=""><i class="fa fa-user"></i></a>
+            <a href="profile.html">
+              <svg viewBox="0 0 24 24" height="1em" width="1em">
+                <title>profile</title>
+                <path
+                  d="M11.5,14C15.64,14 19,15.57 19,17.5V20H4V17.5C4,15.57 7.36,14 11.5,14M18,17.5C18,16.12 15.09,15 11.5,15C7.91,15 5,16.12 5,17.5V19H18V17.5M11.5,5C13.43,5 15,6.57 15,8.5C15,10.43 13.43,12 11.5,12C9.57,12 8,10.43 8,8.5C8,6.57 9.57,5 11.5,5M11.5,6C10.12,6 9,7.12 9,8.5C9,9.88 10.12,11 11.5,11C12.88,11 14,9.88 14,8.5C14,7.12 12.88,6 11.5,6Z"
+                />
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>

@@ -12,11 +12,16 @@ header {
   left: 0;
   justify-content: center;
   background-color: rgb(212, 206, 206);
+  z-index: 2;
 }
 
 main {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+body {
+  background-color: aliceblue;
 }
 
 section {
@@ -25,24 +30,26 @@ section {
   text-align: center;
   position: relative;
 }
-.bookmark {
-  position: absolute;
-  top: -10px;
-  right: 25px;
-  background-color: white;
+fieldset {
+  background-color: rgb(193, 220, 230);
+  border-radius: 5px;
   border: none;
 }
-
-.tags {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+.quiz-card__bookmark-button {
+  position: absolute;
+  top: -15px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
 }
-
-.tags > li {
+.quiz-card__tags-list {
+  list-style-type: none;
+  display: flex;
+}
+.quiz-card__tags-list li {
   margin-right: 10px;
-  border: 2px solid;
-  padding: 3px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px;
   border-radius: 8px;
 }
 
@@ -52,13 +59,49 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  height: 80px;
+  right: 0;
+  background-color: rgb(212, 206, 206);
 }
 
-.footerList {
+.footer__list {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
+  list-style-type: none;
   justify-content: space-around;
-  align-items: center;
-  font-size: 2em;
-  list-style: none;
+}
+
+.quiz-card__bookmark-button svg {
+  font-size: 40px;
+}
+
+footer svg {
+  font-size: 60px;
+}
+
+.quiz-card__answer-button {
+  padding: 6px;
+  margin: 20px;
+  border-radius: 6px;
+  border-color: white;
+  background-color: white;
+}
+
+button.quiz-card__bookmark-button {
+  fill: black;
+}
+/* Profile */
+
+.profile__img {
+  width: 60%;
+  height: 60%;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.settings__toggle-button {
+  padding: 10px 20px;
 }
