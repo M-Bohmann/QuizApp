@@ -86,3 +86,10 @@ footer svg {
   border-color: white;
   background-color: white;
 }
+
+/* Profile */
+
+.profile-img {
+  width: 60%;
+  height: 60%;
+}
