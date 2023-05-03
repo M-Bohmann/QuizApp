@@ -87,6 +87,9 @@ footer svg {
   background-color: white;
 }
 
+button.bookmark {
+  fill: black;
+}
 /* Profile */
 
 .profile-img {
