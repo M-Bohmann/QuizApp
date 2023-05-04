@@ -11,7 +11,7 @@
 }
 .quiz-card__tags-list li {
   margin-right: 10px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #ffffff;
   padding: 5px;
   border-radius: 8px;
 }
@@ -24,6 +24,6 @@
   padding: 6px;
   margin: 20px;
   border-radius: 6px;
-  border-color: white;
-  background-color: white;
+  border-color: #ffffff;
+  background-color: #ffffff;
 }

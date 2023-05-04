@@ -9,7 +9,7 @@ main {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #f0f8ff;
 }
 
 section {
@@ -19,7 +19,7 @@ section {
   position: relative;
 }
 fieldset {
-  background-color: rgb(193, 220, 230);
+  background-color: #c1dce6;
   border-radius: 5px;
   border: none;
 }
