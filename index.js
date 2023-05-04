@@ -7,7 +7,7 @@ darkModeToggle.addEventListener("click", () => {
 
 cards = document.querySelectorAll('[data-js="quiz-cards""]');
 cards.forEach((card) => {
-  const saveBookmark = document.querySelector('[data-js="save-bookmark"]');
+  const saveBookmark = card.querySelector('[data-js="save-bookmark"]');
   saveBookmark.addEventListener("click", () => {
     saveBookmark.classList.toggle("bookmark");
   });

@@ -1,0 +1,25 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+section {
+  padding-bottom: 25px;
+  display: flexbox;
+  text-align: center;
+  position: relative;
+}
+fieldset {
+  background-color: rgb(193, 220, 230);
+  border-radius: 5px;
+  border: none;
+}

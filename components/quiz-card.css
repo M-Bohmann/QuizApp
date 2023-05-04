@@ -1,0 +1,29 @@
+.quiz-card__bookmark-button {
+  position: absolute;
+  top: -15px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+.quiz-card__tags-list {
+  list-style-type: none;
+  display: flex;
+}
+.quiz-card__tags-list li {
+  margin-right: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.quiz-card__bookmark-button svg {
+  font-size: 40px;
+}
+
+.quiz-card__answer-button {
+  padding: 6px;
+  margin: 20px;
+  border-radius: 6px;
+  border-color: white;
+  background-color: white;
+}

@@ -1,0 +1,13 @@
+.profile__img {
+  width: 60%;
+  height: 60%;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.settings__toggle-button {
+  padding: 10px 20px;
+}
