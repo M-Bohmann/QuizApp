@@ -38,3 +38,7 @@
 .bookmark {
   fill: black;
 }
+
+.hidden {
+  display: none;
+}
