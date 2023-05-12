@@ -39,6 +39,6 @@
   fill: black;
 }
 
-.hidden {
+.quiz-card__answer--hidden {
   display: none;
 }
