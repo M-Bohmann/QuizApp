@@ -1,14 +1,9 @@
-const darkModeToggle = document.querySelector('[data-js="dark-mode-toggle"]');
-const bodyElement = document.querySelector('[data-js="body"]');
+/* Bookmarks */
 
-darkModeToggle.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark");
-});
+const saveBookmarkButton = document.querySelector('[data-js="save-bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
-cards = document.querySelectorAll('[data-js="quiz-cards""]');
-cards.forEach((card) => {
-  const saveBookmark = card.querySelector('[data-js="save-bookmark"]');
-  saveBookmark.addEventListener("click", () => {
-    saveBookmark.classList.toggle("bookmark");
-  });
+saveBookmarkButton.addEventListener("click", () => {
+  console.log("Hello");
+  bookmark.classList.toggle("bookmark");
 });

@@ -16,11 +16,14 @@
       <section>
         <fieldset class="quiz-card" data-js="quiz-cards">
           <button class="quiz-card__bookmark-button" data-js="save-bookmark">
-            <svg viewBox="0 0 24 24" height="1em" width="1em">
-              <title>bookmark</title>
-              <path
-                d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
-              />
+            <svg
+              class="quiz-card__bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 24 24"
+              height="1em"
+              width="1em"
+            >
+              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
             </svg>
           </button>
           <p>What is the capital of Germany?</p>
@@ -36,13 +39,16 @@
         </fieldset>
       </section>
       <section>
-        <fieldset data-js="quiz-cards">
+        <fieldset class="quiz-card" data-js="quiz-cards">
           <button class="quiz-card__bookmark-button" data-js="save-bookmark">
-            <svg viewBox="0 0 24 24" height="1em" width="1em">
-              <title>bookmark</title>
-              <path
-                d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
-              />
+            <svg
+              class="quiz-card__bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 24 24"
+              height="1em"
+              width="1em"
+            >
+              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
             </svg>
           </button>
           <p>What property flips the axes in flexbox?</p>
@@ -58,13 +64,16 @@
         </fieldset>
       </section>
       <section>
-        <fieldset data-js="quiz-cards">
+        <fieldset class="quiz-card" data-js="quiz-cards">
           <button class="quiz-card__bookmark-button" data-js="save-bookmark">
-            <svg viewBox="0 0 24 24" height="1em" width="1em">
-              <title>bookmark</title>
-              <path
-                d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
-              />
+            <svg
+              class="quiz-card__bookmark-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 24 24"
+              height="1em"
+              width="1em"
+            >
+              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
             </svg>
           </button>
           <p>Is this a Question?</p>
@@ -82,8 +91,8 @@
     </main>
     <footer>
       <nav>
-        <ul class="footer__list">
-          <li>
+        <ul class="nav__list">
+          <li class="nav__list-item">
             <a href="index.html">
               <svg viewBox="0 0 24 24" height="1em" width="1em">
                 <title>home</title>
@@ -93,7 +102,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav__list-item nav__list-item--active">
             <a href="bookmarks.html">
               <svg viewBox="0 0 24 24" height="1em" width="1em">
                 <title>bookmark</title>
@@ -103,7 +112,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav__list-item">
             <a href="profile.html">
               <svg viewBox="0 0 24 24" height="1em" width="1em">
                 <title>profile</title>
