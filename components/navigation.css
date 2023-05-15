@@ -1,6 +1,7 @@
 .nav__list {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
@@ -12,7 +13,7 @@ nav svg {
 }
 
 .nav__list-item--active {
-  background-color: white;
+  background-color: #eeeaea;
 }
 
 .nav__list-item {
