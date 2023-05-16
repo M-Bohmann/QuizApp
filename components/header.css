@@ -1,0 +1,12 @@
+header {
+  border-bottom: 3px solid #a19c9c;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  background-color: #d4cece;
+  z-index: 2;
+  color: #414e5f;
+}

@@ -1,14 +1,17 @@
-const darkModeToggle = document.querySelector('[data-js="dark-mode-toggle"]');
-const bodyElement = document.querySelector('[data-js="body"]');
+/* Bookmarks */
 
-darkModeToggle.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark");
+const saveBookmarkButton = document.querySelector('[data-js="save-bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
+
+saveBookmarkButton.addEventListener("click", () => {
+  bookmark.classList.toggle("bookmark");
 });
 
-cards = document.querySelectorAll('[data-js="quiz-cards""]');
-cards.forEach((card) => {
-  const saveBookmark = document.querySelector('[data-js="save-bookmark"]');
-  saveBookmark.addEventListener("click", () => {
-    saveBookmark.classList.toggle("bookmark");
-  });
+const answerButton = document.querySelector(
+  '[data-js="quiz-card__answer-button"]'
+);
+const answerParagraph = document.querySelector('[data-js="quiz-card__answer"]');
+
+answerButton.addEventListener("click", () => {
+  answerParagraph.classList.toggle("quiz-card__answer--hidden");
 });
