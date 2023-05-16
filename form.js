@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  const newQuizCard = document.createElement("fieldset");
+  const newQuizCard = document.createElement("section");
   newQuizCard.classList.add("quiz-card");
   form.append(newQuizCard);
 
@@ -40,6 +40,4 @@ form.addEventListener("submit", (event) => {
   const newTag = document.createElement("li");
   newTag.textContent = tagInput.value;
   newList.append(newTag);
-
-  console.log(data);
 });
