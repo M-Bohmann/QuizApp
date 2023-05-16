@@ -13,102 +13,122 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section>
-        <fieldset class="quiz-card" data-js="quiz-cards">
-          <button
-            class="quiz-card__bookmark-button"
-            data-js="save-bookmark"
-            type="button"
+      <section class="quiz-card" data-js="quiz-cards">
+        <button
+          class="quiz-card__bookmark-button"
+          data-js="save-bookmark"
+          type="button"
+          aria-label="bookmark"
+        >
+          <svg
+            class="quiz-card__bookmark-icon"
+            data-js="quiz-card__bookmark-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 24 24"
+            height="1em"
+            width="1em"
           >
-            <svg
-              class="quiz-card__bookmark-icon"
-              data-js="bookmark"
-              xmlns="http://www.w3.org/2000/svg"
-              viewbox="0 0 24 24"
-              height="1em"
-              width="1em"
-            >
-              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
-            </svg>
-          </button>
-          <p>What is the capital of Germany?</p>
-          <button type="button" class="quiz-card__answer-button">
-            Show Answer
-          </button>
-          <p quiz-card__answer--hidden>Berlin</p>
-          <ul class="quiz-card__tags-list">
-            <li>tag 1</li>
-            <li>tag 2</li>
-            <li>tag 3</li>
-          </ul>
-        </fieldset>
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+          </svg>
+        </button>
+        <p>What is the capital of Germany?</p>
+        <button
+          type="button"
+          class="quiz-card__answer-button"
+          data-js="quiz-card__answer-button"
+        >
+          Show Answer
+        </button>
+        <p
+          class="quiz-card__answer quiz-card__answer--hidden"
+          data-js="quiz-card__answer"
+        >
+          Berlin
+        </p>
+        <ul class="quiz-card__tags-list">
+          <li>#general knwoledge</li>
+        </ul>
       </section>
-      <section>
-        <fieldset class="quiz-card" data-js="quiz-cards">
-          <button
-            class="quiz-card__bookmark-button"
-            data-js="save-bookmark"
-            type="button"
+      <section class="quiz-card" data-js="quiz-cards">
+        <button
+          class="quiz-card__bookmark-button"
+          data-js="save-bookmark"
+          type="button"
+          aria-label="bookmark"
+        >
+          <svg
+            class="quiz-card__bookmark-icon"
+            data-js="quiz-card__bookmark-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 24 24"
+            height="1em"
+            width="1em"
           >
-            <svg
-              class="quiz-card__bookmark-icon"
-              data-js="bookmark"
-              xmlns="http://www.w3.org/2000/svg"
-              viewbox="0 0 24 24"
-              height="1em"
-              width="1em"
-            >
-              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
-            </svg>
-          </button>
-          <p>What property flips the axes in flexbox?</p>
-          <button type="button" class="quiz-card__answer-button">
-            Show Answer
-          </button>
-          <p quiz-card__answer--hidden>flex-direction</p>
-          <ul class="quiz-card__tags-list">
-            <li>tag 1</li>
-            <li>tag 2</li>
-            <li>tag 3</li>
-          </ul>
-        </fieldset>
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+          </svg>
+        </button>
+        <p>What property flips the axes in flexbox?</p>
+        <button
+          type="button"
+          class="quiz-card__answer-button"
+          data-js="quiz-card__answer-button"
+        >
+          Show Answer
+        </button>
+        <p
+          class="quiz-card__answer quiz-card__answer--hidden"
+          data-js="quiz-card__answer"
+        >
+          flex-direction
+        </p>
+        <ul class="quiz-card__tags-list">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
       </section>
-      <section>
-        <fieldset class="quiz-card" data-js="quiz-cards">
-          <button
-            class="quiz-card__bookmark-button"
-            data-js="save-bookmark"
-            type="button"
+      <section class="quiz-card" data-js="quiz-cards">
+        <button
+          class="quiz-card__bookmark-button"
+          data-js="save-bookmark"
+          type="button"
+          aria-label="bookmark"
+        >
+          <svg
+            class="quiz-card__bookmark-icon"
+            data-js="quiz-card__bookmark-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 24 24"
+            height="1em"
+            width="1em"
           >
-            <svg
-              class="quiz-card__bookmark-icon"
-              data-js="bookmark"
-              xmlns="http://www.w3.org/2000/svg"
-              viewbox="0 0 24 24"
-              height="1em"
-              width="1em"
-            >
-              <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
-            </svg>
-          </button>
-          <p>Is this a Question?</p>
-          <button type="button" class="quiz-card__answer-button">
-            Show Answer
-          </button>
-          <p quiz-card__answer--hidden>yes</p>
-          <ul class="quiz-card__tags-list">
-            <li>tag 1</li>
-            <li>tag 2</li>
-            <li>tag 3</li>
-          </ul>
-        </fieldset>
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+          </svg>
+        </button>
+        <p>Is this a Question?</p>
+        <button
+          type="button"
+          class="quiz-card__answer-button"
+          data-js="quiz-card__answer-button"
+        >
+          Show Answer
+        </button>
+        <p
+          class="quiz-card__answer quiz-card__answer--hidden"
+          data-js="quiz-card__answer"
+        >
+          yes
+        </p>
+        <ul class="quiz-card__tags-list">
+          <li>#dummy</li>
+        </ul>
       </section>
     </main>
     <footer>
       <nav>
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="index.html">
+            <a href="index.html" aria-label="home">
               <svg viewBox="0 0 24 24" height="1em" width="1em">
                 <path
                   d="M16,8.41L11.5,3.91L4.41,11H6V12L6,19H9V13H14V19H17V11H18.59L17,9.41V6H16V8.41M2,12L11.5,2.5L15,6V5H18V9L21,12H18V20H13V14H10V20H5V12H2Z"
@@ -117,7 +137,7 @@
             </a>
           </li>
           <li class="nav__list-item nav__list-item--active">
-            <a href="bookmarks.html">
+            <a href="bookmarks.html" aria-label="saved bookmarks">
               <svg viewBox="0 0 24 24" height="1em" width="1em">
                 <path
                   d="M8,3H16C17.66,3 19,4.34 19,6V21L12,18L5,21V6C5,4.34 6.34,3 8,3M8,4C6.9,4 6,4.9 6,6V19.5L12,16.94L18,19.5V6C18,4.9 17.1,4 16,4H8Z"
@@ -126,7 +146,7 @@
             </a>
           </li>
           <li class="nav__list-item">
-            <a href="form.html">
+            <a href="form.html" aria-label="add more quiz cards">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -140,7 +160,7 @@
             </a>
           </li>
           <li class="nav__list-item">
-            <a href="profile.html">
+            <a href="profile.html" aria-label="my profile">
               <svg viewBox="0 0 24 24" height="1em" width="1em">
                 <path
                   d="M11.5,14C15.64,14 19,15.57 19,17.5V20H4V17.5C4,15.57 7.36,14 11.5,14M18,17.5C18,16.12 15.09,15 11.5,15C7.91,15 5,16.12 5,17.5V19H18V17.5M11.5,5C13.43,5 15,6.57 15,8.5C15,10.43 13.43,12 11.5,12C9.57,12 8,10.43 8,8.5C8,6.57 9.57,5 11.5,5M11.5,6C10.12,6 9,7.12 9,8.5C9,9.88 10.12,11 11.5,11C12.88,11 14,9.88 14,8.5C14,7.12 12.88,6 11.5,6Z"

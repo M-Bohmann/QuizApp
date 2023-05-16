@@ -15,6 +15,7 @@
   border: 2px solid #ffffff;
   padding: 5px;
   border-radius: 8px;
+  font-size: 13px;
 }
 
 .quiz-card__bookmark-icon {
@@ -24,7 +25,8 @@
 
 .quiz-card__answer-button {
   padding: 6px;
-  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 6px;
   border-color: #ffffff;
   background-color: #ffffff;
@@ -34,7 +36,7 @@
   font-size: 1.3rem;
 }
 
-.bookmark {
+.quiz-card__bookmark-icon--toggle {
   fill: black;
 }
 

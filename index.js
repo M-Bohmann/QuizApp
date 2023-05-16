@@ -3,9 +3,9 @@ const quizCards = document.querySelectorAll('[data-js="quiz-cards"]');
 
 quizCards.forEach((card) => {
   const saveBookmarkButton = card.querySelector('[data-js="save-bookmark"]');
-  const bookmark = card.querySelector('[data-js="bookmark"]');
+  const bookmark = card.querySelector('[data-js="quiz-card__bookmark-icon"]');
   saveBookmarkButton.addEventListener("click", () => {
-    bookmark.classList.toggle("bookmark");
+    bookmark.classList.toggle("quiz-card__bookmark-icon--toggle");
   });
 });
 
